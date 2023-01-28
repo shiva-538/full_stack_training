@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .parent{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    h1,h2,h3{
+        width: 100px;
+        
+        border: 2px solid red;
+    }
+    .website-layout-wrapper{
+        background-color: cyan;
+        height: 700px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        height: 50px;
+        background-color: gray;
+        align-items: center;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: space-between;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
+    ul>li{
+        padding: 10px;
+        color: rgb(226, 158, 158);
+        font-size: 20px;
+        font-weight: 600;
+        border-bottom: 4px solid red;
+        
+    }
+    .main-area{
+        height: 700px;
+        
+        background-color: bisque;
+        display: flex;
+        flex-direction: row;
+        
+        justify-content: space-between;
+        
+    }
+    .left-sidenav{
+        background-color: yellow;
+        height: 400px;
+        flex-grow: 1;
+    }
+    .main-content{
+        background-color: rgb(184, 125, 30);
+        height: 400px;
+        flex-grow: 1;
+    }
+    .right-nav{
+        background-color: rgb(189, 24, 136);
+        height: 400px;
+        flex-grow: 1;
+    }
+    .footer-area{
+        display: flex;
+        background-color: rgb(17, 73, 196);
+        justify-content: center;
+        height: 50px;
+        padding: 5px;
+        justify-content: center;
+    }
+    .logo{
+        width
+    }
+</style>
+<body>
+    <div class="parent">
+        <h1 style="order: 3;">hello text1</h1>
+        <h2 style="order: 2; ">hello text2</h2>
+        <h3 style="order: 1; ">hello text3</h3>
+    </div>
+    <div class="website-layout-wrapper">
+        <nav class="header">
+            <img class="logo" src=" " alt="logo">
+            <ul style="display: flex;">
+                <li>home</li>
+                <li>about us</li>
+                <li>contact us</li>
+            </ul>
+        </nav>
+        <div class="main-area"></div>
+            <div class="left-sidenav">left nav</div>
+                <div class="main-content">main content</div>
+                    <div class="right-nav">right nav</div>
+            <div class="footer-area">
+                <footer>  @copyright</footer>
+            </div>    
+            
+        </div>
+    </div>
+</body>
+</html>

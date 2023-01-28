@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     
+      
+      <title>project</title>
+    </head>
+    <style>
+        :root {
+    --color-primary: cyan;
+    --color-white: #fbfdfd;
+    --color-blue: #0065e0;
+
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: sans-serif;
+     background-size: cover;
+     
+     
+  }
+  .logo {
+    color: var(--color-white);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .logo span {
+    color: var(--color-white);
+  }
+  .menu-bar {
+    background-color: var(--color-blue);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: relative;
+  }
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+  .menu-bar ul li {
+ 
+    padding: 10px 30px;
+   
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-bar ul li a {
+    font-size: 20px;
+    color: var(--color-white);
+    text-decoration: none;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-bar ul li a:hover {
+    color: var(--color-primary);
+  }
+  .dropdown-menu {
+  display: none;
+}
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color:  rgb(128, 1, 1);
+  border: solid 2px;
+}
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+  .main-area{
+    height: 700px;
+    
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    
+    width: 100%;
+    
+    
+}
+.left-sidenav{
+    background-color: yellow;
+    height: 400px;
+    flex-grow: 1;
+}
+.main-content{
+    background-color: rgb(184, 125, 30);
+    height: 400px;
+    flex-grow: 1;
+}
+.right-nav{
+    background-color: rgb(189, 24, 136);
+    height: 400px;
+    flex-grow: 1;
+}
+  
+  
+  
+    </style>
+    <body> <div style="background-image: url(https://tse4.mm.bing.net/th?id=OIP.FZvsRPxiVPUayL668E95QAHaEK&pid=Api&P=0);">  </div>
+  
+      <div class="menu-bar">
+        <h1 class="logo">ishadeed<span>store.</span></h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">works </a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3 </a></li>
+          </ul>
+         
+          <li><a href="#" style="text-align: center;">ahmed shadeeb <img src="https://tse4.mm.bing.net/th?id=OIP.xo-BCC1ZKFpLL65D93eHcgHaGe&pid=Api&P=0" width="50px" height="50px" alt=""></a></li>
+        </ul>
+      </div>
+      
+   
+      <!------ <div class="main-area"></div>
+      <div class="left-sidenav">left nav</div>
+          <div class="main-content">main content</div>
+              <div class="right-nav">right nav</div>
+      <div class="footer-area">
+          <footer style="display: flex; justify-content: center; align-items: center;">  @copyright</footer>
+      </div>
+    
+      </div>  --->
+    </body>
+  </html>

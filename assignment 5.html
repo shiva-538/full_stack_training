@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+     <title> demo</title>
+
+<style>
+    nav{
+        display: flex;
+        background-color: red;
+        justify-content: center;
+    }
+    ul{
+        background-color: green;
+        padding: 5px;
+        margin: 5px;    
+        text-align: center;
+        list-style: none;
+        drop
+    }
+
+    ul>li{
+    display: inline-block;
+    width: 100px;
+    padding: 5px;
+    border-bottom: 2px solid red;
+    background-color: #ddd;
+    }
+    ul>li a{
+    color: red;
+    font-size: 20px;
+    }
+  
+  .course-sub-menu{
+    display: none;
+    
+  }
+  ul>li>a:hover,.course-sub-menu{
+    color: aqua;
+   
+    }
+</style></head>
+<body>
+    <nav>
+        <ul>
+            <li> <a href="">home</a></li>
+            <li > <a href="aboutus.html">about us
+            <ul class="course-sub-menu" >
+                
+                <li>java</li>
+                <li>python</li>
+            </ul></a></li>
+            <li> <a href="">contact us</a></li>
+            <li><a href="">logout</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
