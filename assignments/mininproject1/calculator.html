@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="output">
+        <span id="result"></span>
+      </div>
+      <div class="buttons">
+        <button onclick="addNumber('0')">0</button>
+        <button onclick="addNumber('1')">1</button>
+        <button onclick="addNumber('2')">2</button>
+        <button style="background-color: coral;" onclick="addOperator('+')">+</button>
+        <button onclick="addNumber('3')">3</button>
+        <button onclick="addNumber('4')">4</button>
+        <button onclick="addNumber('5')">5</button>
+        <button onclick="addOperator('-')" style="background-color: fuchsia;">-</button>
+        <button onclick="addNumber('6')">6</button>
+        <button onclick="addNumber('7')">7</button>
+        <button onclick="addNumber('8')">8</button>
+        <button  style="background-color: rgb(122, 160, 65);"onclick="addOperator('*')">X</button>
+        <button onclick="addNumber('9')">9</button>
+        <button onclick="clearResult()">C</button>
+        <button  onclick="calculate()" style="background-color: red;">=</button>
+        <button style="background-color:green ;" onclick="addOperator('/')">÷</button>   
+         </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>

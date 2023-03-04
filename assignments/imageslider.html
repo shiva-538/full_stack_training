@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>.slider {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+      }
+      
+      .slides {
+        display: flex;
+        width: 100%;
+        height: 100%;
+      }
+      
+      .slides img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 2rem;
+        cursor: pointer;
+      }
+      
+      .left-arrow {
+        left: 10px;
+      }
+      
+      .right-arrow {
+        right: 10px;
+      }
+      
+      /* <!-- <style>#slider {
+        width: 500px;
+        height: 300px;
+        overflow: hidden;
+      }
+      
+      #slider img {
+        width: 500px;
+        height: 300px;
+        float: left;
+      } -->
+      </style> */
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+          <img src="https://www.google.co.in/imgres?imgurl=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2015%2F04%2F23%2F22%2F00%2Ftree-736885__480.jpg&imgrefurl=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Fnature%2F&tbnid=9SPhZ2nyEGps3M&vet=12ahUKEwiI5YHS5Lj9AhUO53MBHaf2CPkQMygAegUIARDgAQ..i&docid=Ba_eiczVaD9-zM&w=771&h=480&q=images&hl=en&authuser=0&ved=2ahUKEwiI5YHS5Lj9AhUO53MBHaf2CPkQMygAegUIARDgAQ">
+          <img src="https://www.google.co.in/imgres?imgurl=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F268533%2Fpexels-photo-268533.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-pixabay-268533.jpg%26fm%3Djpg&imgrefurl=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fday%2F&tbnid=nwiTKnJXTwcwcM&vet=12ahUKEwiI5YHS5Lj9AhUO53MBHaf2CPkQMygBegUIARDiAQ..i&docid=qz9um1EwaZz8CM&w=1920&h=1278&q=images&hl=en&authuser=0&ved=2ahUKEwiI5YHS5Lj9AhUO53MBHaf2CPkQMygBegUIARDiAQ">
+          <img src="https://www.google.co.in/imgres?imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1541963463532-d68292c34b19%3Fixlib%3Drb-4.0.3%26ixid%3DMnwxMjA3fDB8MHxzZWFyY2h8M3x8Ym9va3xlbnwwfHwwfHw%253D%26w%3D1000%26q%3D80&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fbook&tbnid=U4tLGpje4-JirM&vet=12ahUKEwiI5YHS5Lj9AhUO53MBHaf2CPkQMygCegUIARDkAQ..i&docid=8OVmgDmSUbX_QM&w=1000&h=1498&q=images&hl=en&authuser=0&ved=2ahUKEwiI5YHS5Lj9AhUO53MBHaf2CPkQMygCegUIARDkAQ">
+          <img src="image4.jpg">
+        </div>
+        <div class="arrow left-arrow">&#10094;</div>
+        <div class="arrow right-arrow">&#10095;</div>
+      </div>
+      
+      <script src="imageslider.js"></script>
+</body>
+</html>
