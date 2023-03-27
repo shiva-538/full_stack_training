@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class myarray {
+            constructor(array) {
+                this.array = array;
+            }
+
+            findLargest() {
+                let largest = this.array[0];
+                for (let i = 1; i < this.array.length; i++) {
+                    if (this.array[i] > largest) {
+                        largest = this.array[i];
+                    }
+                }
+                return largest;
+            }
+        }
+        let newarray = new myarray([4, 8, 20, 10, 5]);
+        let largest = newarray.findLargest();
+        console.log(largest); // 10
+    </script>
+</body>
+
+</html>
