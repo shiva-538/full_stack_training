@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rating</title>
+</head>
+<style>
+    .rating {
+        font-size: 30px;
+    }
+
+    .star {
+        color: #ccc;
+        cursor: pointer;
+    }
+
+    .star:hover {
+        color: orange;
+    }
+</style>
+<body>
+    <div class="rating">
+        <span class="star" id="star1" onclick="setRating(1)">&#9733;</span>
+        <span class="star" id="star2" onclick="setRating(2)">&#9733;</span>
+        <span class="star" id="star3" onclick="setRating(3)">&#9733;</span>
+        <span class="star" id="star4" onclick="setRating(4)">&#9733;</span>
+        <span class="star" id="star5" onclick="setRating(5)">&#9733;</span>
+    </div>
+    <script>var rating = 0;
+        function setRating(star) {
+            rating = star;
+            highlightStars(star);
+        }
+        function highlightStars(star) {
+            for (var i = 1; i <= 5; i++) {
+                var starElem = document.getElementById("star" + i);
+                if (i <= star) {
+                    starElem.style.color = "orange";
+                } else {
+                    starElem.style.color = "#ccc";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
