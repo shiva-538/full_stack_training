@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>StudentGuru Blood Donation</title>
+    <style>
+      /* Styles for the logo */
+      .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        background-color: #f5f5f5;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      
+      /* Styles for the form */
+      form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+      
+      label {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      
+      input[type="text"], select {
+        padding: 8px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px #ccc;
+      }
+      
+      input[type="submit"] {
+        padding: 10px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      StudentGuru Blood Donation
+    </div>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="blood-group">Blood Group:</label>
+      <select id="blood-group" name="blood-group" required>
+        <option value=""></option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+      </select>
+      
+      <label for="contact-number">Contact Number:</label>
+      <input type="text" id="contact-number" name="contact-number" required>
+      
+      <input type="submit" value="Donate">
+    </form>
+    <script>
+        const form = document.querySelector('form');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault(); // prevent the form from submitting
+  
+  const name = document.getElementById('name').value;
+  const bloodGroup = document.getElementById('blood-group').value;
+  const contactNumber = document.getElementById('contact-number').value;
+  
+  // TODO: Send the data to the server for blood donation process
+  
+  // Show a success message
+  alert(`Thank you, ${name}! Your blood group ${bloodGroup} donation request has been submitted. We will contact you on ${contactNumber} for further process.`);
+});
+
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
